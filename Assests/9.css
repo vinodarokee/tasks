@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins',sans-serif;
+}
+#Background .showcase{
+    position: absolute;
+    right: 0;
+    width: 100%;
+    min-height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #111;
+    color: #fff;
+    z-index: 2;
+    transition: 0.4s;
+}
+#Background .showcase.active{
+    right: 300px;
+}
+#Background .showcase header{
+position: absolute;
+top: 0;
+left: 0;
+display: flex;
+align-items: center;
+justify-content: space-between;
+width: 100%;
+padding: 40px 100px;
+z-index: 1000;
+}
+#Background .showcase .logo{
+    text-transform: uppercase;
+    cursor: pointer;
+}
+#Background .showcase .toggle{
+    position: relative;
+    width: 60px;
+    height: 60px;
+    background: url("./Images/eec071442e9a1b8e017c5a7c1853b880.jpg");
+    background-repeat: no-repeat;
+    background-size: 30px;
+    background-position: center;
+    cursor: pointer;
+}
+#Background .showcase .toggle.active{
+    background: url("./Images/vinod.png");
+    background-repeat: no-repeat;
+    background-size: 25px;
+    background-position: center;
+    cursor: pointer;
+}
+#Background.showcase video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.8;
+}
+#Background.showcase .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #03a9f4;
+    mix-blend-mode: overlay;
+}
+#Background .text{
+    position: relative;
+    z-index: 10;
+}
+#Background .text h2{
+    font-size: 5em;
+    font-weight: 800;
+    line-height: 1em;
+    text-transform: uppercase;
+}
+#Background .text h3{
+    font-size: 4em;
+    font-weight: 700;
+    line-height: 1em;
+    text-transform: uppercase;
+}
+#Background .text p{
+    font-size: 1.1em;
+    font-weight: 400;
+    margin: 20px 0;
+    max-width: 700px;
+}
+#Background .text a{
+    display: inline-block;
+    font-size: 1em;
+    background: #fff;
+    padding: 10px 30px;
+    color: #111;
+    text-transform: uppercase;
+    margin-top: 10px;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition: 0.4s;
+}
+#Background .text a:hover{
+    letter-spacing: 6px;
+}
+#Background .showcase .social{
+    position: fixed;
+    bottom: 20px;
+    display: flex;
+    z-index: 10;
+    justify-content: center;
+}
+#Background .showcase .social li{
+    list-style: none; 
+    display:inline-block;
+    filter: invert(1);
+    margin-right: 20px;
+    transform: scale(0.5);
+    transition: 0.5s;
+}
+#Background .showcase .social li:hover{
+    transform: scale(0.5) translateY(-15px);
+}
+#Background .switch-btn{
+    display: inline-block;
+    align-items: center;
+    justify-content: space-around;
+    width:7rem;
+    height: 2rem;
+    text-transform: uppercase;
+    position: absolute;
+    bottom: 7%;
+    left: 7%;
+    display: flex;
+    border-radius: 5px;
+    border: none;
+    transition: 0.5s;
+}
+#Background .switch-btn span{
+    display: inline-block;
+    font-size: 0.85rem;
+    cursor: pointer;
+    text-transform: capitalize;
+    color: #49a6e9;
+}
+#Background .switch{
+        position: absolute;
+        width: 50%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background: #49a6e9;
+        border-radius: 5px;
+        margin: 0;
+        display: block;
+        transition:0.5s;
+    }
+    #Background .slide .switch {
+        left: 50%;
+      }
+ #Background .menu{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 300px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* #Background .menu ul{
+    position: relative;
+    list-style: none;
+}
+#Background .menu ul li a{
+text-decoration: none;
+font-size: 25px;
+color: #111;
+}
+#Background .menu ul li a:hover{
+    color: #03a9f4;
+} */
+@media (max-width:798px){
+    #Background .showcase, 
+    #Background .showcase header{
+        padding: 40px;
+    }
+    #Background .text h2{
+        font-size: 3em;
+    }
+    #Background .text h3{
+        font-size: 2em;
+    }
+}

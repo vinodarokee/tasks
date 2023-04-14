@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./5.css">
+</head>
+<body>
+    <div class="nav-bar">
+        <div id="menu-icon" onclick="toggleMenu()">
+        <div class="bar" id="bar1"></div>
+        <div class="bar" id="bar2"></div>
+        <div class="bar" id="bar3"></div>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li> 
+            <li><a href="#">Blog</a></li> 
+            <li><a href="#">Services</a></li> 
+            <li><a href="#">About Us</a></li> 
+            <li><a href="#">Contact Us</a></li> 
+        </ul>
+    </div>
+    <div class="menu-bg">
+
+    </div>
+</body>
+<script>
+    let navLinks=document.querySelector(".nav-links")
+
+    let menu=document.querySelector("#menu-icon")
+
+    let showBg=document.querySelector(".menu-bg")
+
+    function toggleMenu(){
+        
+        navLinks.classList.toggle("show-links")
+
+        menu.classList.toggle("menu-change")
+
+        showBg.classList.toggle("show-bg")
+    }
+</script>
+</html>
